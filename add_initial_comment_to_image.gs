@@ -17,7 +17,7 @@ function addCommentToImage() {
     ]
   }
 
-  // 3. Define the comment content
+  // Define the comment content
   var commentContent = "Enter the *numbers* corresponding to the prep type. \n 1. round skin \n 2. flat skin \n 3. skull \n 4 skeleton \n 5. other";
 
   var newComment = Drive.newComment();
