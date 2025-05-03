@@ -1,5 +1,5 @@
 /* 
-The goal for this tool is to indentify all the subfolders with more than or equal to a specified number of files within them and add to the running total.
+The goal for this tool is to identify all the subfolders with more than or equal to a specified number of files within them and add to the running total.
 A master spreadsheet with multiple sheets, each with their own set of links, is iterated through.
 The end result is a final count of all the subfolders that have met the criteria specified.
 
