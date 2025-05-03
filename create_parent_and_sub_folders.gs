@@ -69,7 +69,7 @@ function create_SubandParent_Folders() {
         if (!subFolderIterator.hasNext()) {
           var subFolderId = parentFolder.createFolder(subfolderName).getId();
 
-          const identPrepTemplate = DriveApp.getFileById('1_K-lwsugTMrjH_rFgsUnqohyp5AUfG2r');  // Identify_prep_type image
+          const identPrepTemplate = DriveApp.getFileById('ADD_YOUR_FILE_ID_HERE');  // Identify_prep_type image
           const copiedTemplate = identPrepTemplate.makeCopy(DriveApp.getFolderById(subFolderId)).getId();
           addCommentToImage(copiedTemplate);
           Logger.log(subfolderName);
