@@ -50,7 +50,7 @@ function create_SubandParent_Folders() {
           
           //////
           // This is where the template is copied, moved, renamed, and its sheet is also renamed
-          const spreadsheetTemplate = DriveApp.getFileById('1j6Li1pFx3XX7l5ndtzwRJphEOU9mD0ZReNuqUZcPtoY'); // Spreadsheet template
+          const spreadsheetTemplate = DriveApp.getFileById('ADD_YOUR_FILE_ID_HERE'); // Spreadsheet template
 
           // The second parameter of this .makeCopy has to be a folder
           const copiedFile = spreadsheetTemplate.makeCopy(newParentName, DriveApp.getFolderById(newParentFolderId));
