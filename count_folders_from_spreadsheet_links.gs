@@ -27,7 +27,7 @@ return: void
 function main () 
 {
   // Hyperlink to the master spreadsheet
-  const spreadsheet = 'https://docs.google.com/spreadsheets/d/1sDKuBsoBlOc7djNwYt9FSGZ0q1EKPUC3D1DxsimGILY/';
+  const spreadsheet = 'https://docs.google.com/spreadsheets/d/YOUR_URL_LINK_HERE';
   // The number of files required for a subfolder to be included in the running total
   const numToCountFiles = 2;
 
