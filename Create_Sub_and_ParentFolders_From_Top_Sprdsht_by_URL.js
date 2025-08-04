@@ -20,7 +20,6 @@ function create_SubandParent_Folders() {
       const species = sheet.getRange(i, 8).getValue();
       const subspecies = sheet.getRange(i, 9).getValue();
       
-      //capturing
       var rowArray = [catalogId, family, genus, species, subspecies];
 
       let subfolderName = catalogId;
@@ -69,7 +68,7 @@ function create_SubandParent_Folders() {
         if (!subFolderIterator.hasNext()) {
           var subFolderId = parentFolder.createFolder(subfolderName).getId();
 
-          const identPrepTemplate = DriveApp.getFileById('ADD_YOUR_FILE_ID_HERE');  // Identify_prep_type image
+          const identPrepTemplate = DriveApp.getFileById('ADD_YOUR_FILE_ID_HERE');
           const copiedTemplate = identPrepTemplate.makeCopy(DriveApp.getFolderById(subFolderId)).getId();
           addCommentToImage(copiedTemplate);
           Logger.log(subfolderName);
@@ -98,7 +97,7 @@ function addCommentToImage(fileId) {
   }
 
   // Define the comment content
-  var commentContent = "Enter the *numbers* corresponding to the prep type. \n 1. round skin \n 2. flat skin \n 3. skull \n 4 skeleton \n 5. other";
+  var commentContent = "YOUR_COMMENT";
 
   var newComment = Drive.newComment();
   newComment.content = commentContent;
